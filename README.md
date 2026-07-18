@@ -12,6 +12,8 @@
 
 This repository collects hardware designs for SeedSigner: display HATs, 3D-printable enclosures, and SeedQR paper templates. Its centerpiece is the **Battery SeedSigner** — a modified SeedSigner+ (SeSi+) board that runs entirely off 3x AAA batteries instead of USB power.
 
+> **Runs stock SeedSigner OS.** This is a pure hardware/power mod — no custom firmware, OS build, or software changes of any kind. Flash the [official SeedSigner OS image](https://seedsigner.com) exactly as you would for any other SeedSigner build; the battery board just replaces the power source.
+
 ---
 
 ## What is the Battery SeedSigner?
@@ -33,9 +35,9 @@ USB-powered airgapped signers still need to be plugged into *something* to recei
 
 | | |
 |---|---|
-| **Battery board** | Holds 3x AAA cells in series (~4.5V) and regulates the output to a stable 5V rail via an onboard buck/boost converter. |
-| **Connector** | A 3-pin cable links the battery board to a matching connector added to the stock SeSi+ board, delivering power directly to the mainboard. |
-| **Stock board mod** | The only change to the reference SeedSigner+ PCB is the added 3-pin connector — everything else matches the stock design. |
+| **Battery board** | Holds 3x AAA cells in series (~4.5V) and regulates the output to a stable 5V rail via an onboard converter. |
+| **Connector** | A 3-pin cable links the battery board to a matching connector added to the stock SeSi+ board. Only 2 of the 3 pins are wired: **5V** and **GND**. The third pin is unused. |
+| **Stock board mod** | The only change to the reference SeedSigner+ PCB is the added 3-pin connector — everything else, including the software it runs, matches the stock design. |
 
 <p align="center">
   <img src="display_hats/plus_hat/AAA powered board/images/Sesi+ AAA battery board.png" width="480" alt="3x AAA battery board close-up">

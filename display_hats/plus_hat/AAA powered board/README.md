@@ -6,12 +6,14 @@
 
 A 3x AAA battery board for the SeedSigner+ (SeSi+) display/control board, letting it run untethered from USB power. The stock SeSi+ board is modified with a **3-pin connector** that mates to a matching connector on the battery board via a short cable — power flows straight from the batteries to the board, no USB or wall power involved.
 
+This is a pure hardware power mod: the board runs the **official, unmodified SeedSigner OS**. No custom firmware, OS build, or software changes are needed — flash the standard SeedSigner image as usual.
+
 ## Characteristics
 
 - Powers a SeedSigner+ board entirely from 3x AAA cells (~4.5V nominal)
 - Onboard regulator delivers a stable 5V rail to the mainboard
-- Connects to the SeSi+ board with a single 3-pin cable
-- No modification to the SeedSigner firmware/software required
+- Connects to the SeSi+ board with a 3-pin cable — only **5V** and **GND** are wired; the third pin is unused
+- Runs the stock, official SeedSigner OS — no firmware/software modification required
 
 ## Gallery
 
